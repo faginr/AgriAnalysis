@@ -1,0 +1,339 @@
+/* global scope */
+/* :root {
+  create variable to be inserted elsewhere as needed 
+  --primary-text: #3f3f3f;
+  rgb(19, 122, 206)
+} 
+*/
+
+/* target all and reset*/
+* {
+  /* this makes padding not effect width */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  /* controversial smoothing font */
+  /* --webkit-font-smoothing: antialiased; */
+}
+
+/* Navbar */
+
+ul {
+  list-style: none;
+}
+
+i {
+  color: limegreen;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: white;
+}
+
+.container img {
+  padding-right: 5rem;
+}
+
+.container ul {
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.container ul li {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: #3c3c3c;
+  border-radius: 3px;
+}
+
+.container ul li a:hover {
+  border-bottom: 4px solid limegreen;
+}
+
+/* welcome section */
+
+.welcome-div {
+  height: 100vh;
+  margin-top: 20vh;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-div::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(/imgs/welcome-background-2.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+.welcome-div h1 {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-buttons {
+  margin: 5rem;
+}
+
+.welcome-buttons a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  margin: 2rem;
+  padding: 1rem;
+  background: limegreen;
+  border-radius: 34px 34px 34px 34px;
+}
+
+.welcome-buttons a:hover {
+  color: limegreen;
+  background: white;
+}
+
+/* Showcase Section */
+
+.showcase {
+  text-align: center;
+  padding-top: 2.5rem;
+  /* padding-bottom: 2rem; */
+  display: grid;
+  grid-gap: 40px;
+  grid-template-areas:
+    "showcase-title showcase-title"
+    "a-1 b-1"
+    "a-2 b-2"
+    "a-3 b-3"
+    "a-4 b-4";
+  line-height: 3rem;
+}
+
+/* Grid Setup */
+
+.showcase-item {
+  font-size: 1.5rem;
+}
+
+.showcase-title {
+  grid-area: showcase-title;
+  font-size: 2rem;
+}
+.a-1 {
+  grid-area: a-1;
+}
+.a-2 {
+  grid-area: a-2;
+}
+.a-3 {
+  grid-area: a-3;
+}
+.a-4 {
+  grid-area: a-4;
+}
+.b-1 {
+  grid-area: b-1;
+}
+.b-2 {
+  grid-area: b-2;
+}
+.b-3 {
+  grid-area: b-3;
+}
+.b-4 {
+  grid-area: b-4;
+}
+
+.a-col {
+  padding-right: 5rem;
+  justify-self: end;
+}
+
+.b-col {
+  padding-left: 5rem;
+  justify-self: start;
+}
+
+.showcase-button a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  /* margin: 2rem; */
+  padding: 0.5rem;
+  background: limegreen;
+  border: 1px solid limegreen;
+  border-radius: 34px 34px 34px 34px;
+}
+
+.showcase-button a:hover {
+  color: limegreen;
+  background: white;
+}
+
+/* News Section */
+
+.news {
+  height: 100vh;
+  z-index: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.news::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(/imgs/welcome-background.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.45;
+  z-index: -1;
+}
+
+.news-title h2{
+  font-size: 3rem;
+  /* margin-top: 4rem; */
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.news-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+
+.news-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.news-content > .spacer-left,
+.news-content > .spacer-right {
+  flex: 0 0 10vw;
+}
+
+.news-item {
+  width: 360px;
+  height: 500px;
+  background: white;
+  box-shadow: 3px 3px 3px #333;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-image {
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.news-bottom {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.news-title {
+  flex-grow: 1;
+  font-size: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.news-title a{
+  color: black;
+  text-decoration: none;
+}
+
+.news-text {
+  flex-grow: 1;
+  color: #999;
+}
+
+.news-date {
+  flex-grow: 3;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 3px;
+}
+
+/* Map */
+
+.location-content{
+  height: 1000px;
+  width: 100%;
+  margin-top: 1px;
+  display: flex;
+}
+
+.map {
+
+}
+
+.contact-us{
+  height: 600px;
+  width: 800px;
+  background-color: #eee;
+}
+
+.contact-box{
+  margin: 5rem;
+}
+
+.footer-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.footer-item{
+  width: 360px;
+}
+
+/* .footer-logo{
+  display: flex;
+  flex-direction: row;
+} */

@@ -13,8 +13,11 @@
       href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header Section -->
+
     <header>
       <div class="container">
         <img src="/imgs/Logo.png" alt="" />
@@ -26,74 +29,174 @@
               <li class="nav-item"><a href="#">Products</a></li>
               <li class="nav-item"><a href="#">Services</a></li>
               <li class="nav-item"><a href="#">Information</a></li>
-              <li class="nav-item"><a href="#">News&Events</a></li>
+              <li class="nav-item"><a href="#">News & Events</a></li>
               <li class="nav-item"><a href="#">My Agri-Analysis</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
+
+    <!-- Welcome Section -->
+
     <section class="welcome-section">
-      <div class="welcome">
+      <div class="welcome-div">
         <h1>Your Plant and Seed Testing Resource</h1>
-        <a href="#" class="welcome-button">About Us</a>
-        <a href="#" class="welcome-button">Learn More</a>
+        <div class="welcome-buttons">
+          <a href="#">About Us</a>
+          <a href="#">Learn More</a>
+        </div>
       </div>
     </section>
+
+    <!-- Showcase Section -->
+
     <section class="showcase">
       <div class="showcase-title">
-        <h2>Testing For:</h2>
+        <h2>Testing For <i class="fas fa-arrow-down"></i></h2>
       </div>
-      <div class="a-1">
-        Lettuce Mosaic Virus <i class="fas fa-check-circle"></i>
+      <div class="a-col">
+        <div class="a-1 showcase-item">
+          Lettuce Mosaic Virus <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="a-2 showcase-item">
+          Bacterial Diseases <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="a-3 showcase-item">
+          Grapevine Diseases <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="a-4 showcase-item">
+          Fungal Diseases <i class="fas fa-check-circle"></i>
+        </div>
       </div>
-      <div class="a-2">
-        Bacterial Diseases <i class="fas fa-check-circle"></i>
+      <div class="b-col">
+        <div class="b-1 showcase-item">
+          Seed Health <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="b-2 showcase-item">
+          Genetic Traits <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="b-3 showcase-item">
+          GMOs <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="b-4 showcase-item showcase-button">
+          <a href="#">Read More</a>
+        </div>
       </div>
-      <div class="a-3">
-        Grapevine Diseases <i class="fas fa-check-circle"></i>
-      </div>
-      <div class="a-4">Fungal Diseases <i class="fas fa-check-circle"></i></div>
-      <div class="b-1">Seed Health <i class="fas fa-check-circle"></i></div>
-      <div class="b-2">Genetic Traits <i class="fas fa-check-circle"></i></div>
-      <div class="b-3">GMOs <i class="fas fa-check-circle"></i></div>
-      <div class="b-4"><a href="#">Learn More</a></div>
     </section>
+
+    <!-- News Section -->
+
     <section class="news">
-      <div class="news-item">
-        <div class="news-img">
-          <img src="" alt="" />
-        </div>
-        <div class="news-text">
-          <p class="news-date"></p>
-          <h4 class="news-title"><a href=""></a></h4>
-        </div>
+      <div class="news-title">
+        <h2>Latest News</h2>
       </div>
-      <div class="news-item">
-        <div class="news-img">
-          <img src="" alt="" />
+
+      <div class="news-content">
+        <div class="spacer-left"></div>
+        <div class="news-items">
+          <div class="news-item">
+            <div class="news-img">
+              <img src="/imgs/redBlotchcrop.jpg" alt=""/>
+            </div>
+            <div class="news-bottom">
+              <h4 class="news-title"><a href="#">Red Blotch Virus</a></h4>
+              <div class="news-text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="news-date">
+              <p>8/5/2019</p>
+            </div>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-img">
+              <img src="/imgs/bugCrop.jpg" alt="" />
+            </div>
+            <div class="news-bottom">
+              <h4 class="news-title"><a href="#">Crop Pests</a></h4>
+              <div class="news-text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="news-date">
+                  <p>8/5/2019</p>
+                </div>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-img">
+              <img src="/imgs/soilCrop.jpg" alt="" />
+            </div>
+            <div class="news-bottom">
+              <h4 class="news-title"><a href="#">Soil Health</a></h4>
+              <div class="news-text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="news-date">
+                  <p>8/5/2019</p>
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="news-text">
-          <p class="news-date"></p>
-          <h4 class="news-title"><a href=""></a></h4>
-        </div>
-      </div>
-      <div class="news-item">
-        <div class="news-img">
-          <img src="" alt="" />
-        </div>
-        <div class="news-text">
-          <p class="news-date"></p>
-          <h4 class="news-title"><a href=""></a></h4>
-        </div>
+        <div class="spacer-right"></div>
       </div>
     </section>
+
+    <!-- location -->
+
     <section class="location">
-        <div class="map"></div>
-        <div class="contact-us"></div>
+      <div class="location-content">
+      <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.8256820183583!2d-121.73852148485034!3d38.53778627566612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085296e849fed4f%3A0xf17a612090be36a0!2s950+W+Chiles+Rd%2C+Davis%2C+CA+95618!5e0!3m2!1sen!2sus!4v1565046255370!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="contact-us">
+        <div class="contact-box">
+          <div class="contact-header">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="contact-divider">
+          </div>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Phone">
+          <textarea name="Comments" id="Comments" cols="30" rows="10" placeholder="Comments"></textarea>
+          <div class="contact-button">
+            <a href="#">Submit</a>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
     <footer>
-        
+      <div class="footer-container">
+      <div class="footer-logo footer-item">
+          <img src="/imgs/Logo.png" alt="" class="footer-logo"/>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem expedita facilis asperiores ad molestias dolore vitae at quos. </p>
+          <p>&copy;Agri-Analysis LLC 200-52015- All rights reserved</p>
+        </div>
+      <div class="footer-item">
+        <h3>Contact US</h3>
+
+        <p>Email:</p>
+        <p>123@agri-analysis.com</p>
+
+        <p>Phone:</p>
+        <p>999.999.9999</p>
+
+        <p>Address:</p>
+        <p>935 W Chiles Road, Davis CA</p>
+      </div>
+      <div class="footer-item">
+        <h3>Quick Links</h3>
+        <p>About Us</p>
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div class="footer-item">
+        <h3>Follow Us</h3>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
     </footer>
   </body>
 </html>
