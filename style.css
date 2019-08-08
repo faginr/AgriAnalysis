@@ -200,7 +200,7 @@ i {
 /* News Section */
 
 .news {
-  height: 100vh;
+  height: 900px;
   z-index: 1;
   text-align: center;
   margin: 0;
@@ -210,7 +210,7 @@ i {
   content: "";
   display: block;
   width: 100%;
-  height: 100%;
+  height: 900px;
   position: absolute;
   background: url(/imgs/welcome-background.jpg);
   background-position: center;
@@ -242,6 +242,12 @@ i {
   flex: 1;
 }
 
+.news-items a{
+  color: black;
+  text-decoration: none;
+}
+
+
 .news-content > .spacer-left,
 .news-content > .spacer-right {
   flex: 0 0 10vw;
@@ -259,8 +265,6 @@ i {
 }
 
 .news-image {
-  height: 100vh;
-  width: 100vw;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,10 +282,6 @@ i {
   padding: 0;
 }
 
-.news-title a{
-  color: black;
-  text-decoration: none;
-}
 
 .news-text {
   flex-grow: 1;
@@ -301,15 +301,13 @@ i {
 /* Map */
 
 .location-content{
-  height: 1000px;
+  height: 650px;
   width: 100%;
   margin-top: 1px;
   display: flex;
 }
 
-.map {
-
-}
+/* Contact */
 
 .contact-us{
   height: 600px;
@@ -319,21 +317,131 @@ i {
 
 .contact-box{
   margin: 5rem;
+  margin-left: 7rem;
+  width: 520px;
 }
 
+
+.contact-header{
+  font-size: 2rem;
+}
+
+.contact-divider{
+  height: 40px;
+}
+
+.input-item{
+  margin: 5px;
+  padding: 5px;
+  color: #999;
+}
+
+.contact-name{
+  width: 500px;
+}
+
+.contact-email, .contact-phone{
+  width: 242.5px;
+}
+
+textarea {
+  width: 500px;
+}
+
+.contact-button a{
+  float: right;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  width: 120px;
+  padding: .5rem;
+  background: limegreen;
+  border-radius: 34px 34px 34px 34px;
+}
+
+.contact-button a:hover {
+  color: limegreen;
+  background: white;
+}
+
+/* Footer */
+
 .footer-container{
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row; 
-  justify-content: space-evenly;
+  justify-content: center;
   align-content: center;
+  margin-left: 3rem;
+  color: #555;
+  padding-bottom: 1rem;
 }
 
 .footer-item{
-  width: 360px;
+  width: 20%;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-/* .footer-logo{
+.footer-light{
+  color: #aaa;
+}
+
+.footer-contact{
   display: flex;
-  flex-direction: row;
-} */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quick-links{
+  margin-bottom: 1.8rem;
+}
+
+.fa-twitter{
+  margin-top: 1.8rem;
+  color: steelblue;
+  font-size: 2rem;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1440px) {
+  .location-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .map{
+    margin: auto;
+  }
+
+  .contact-us{
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1165px) {
+  
+  .news{
+    height: 1800px; 
+  }
+
+  .news-items{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+
+
+}
+
+@media (max-width: 400px) {
+  
+}
